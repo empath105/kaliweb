@@ -1,0 +1,135 @@
+body{
+    background-color: #0d0d0d;
+    color: blueviolet;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width:800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h3{
+    color:blueviolet;
+    text-align: center;
+}
+
+.navbar{
+    border-bottom: 2px solid blueviolet;
+    max-height: 10%;
+}
+
+.me-2{
+    width: 5%;
+    border-radius: 10px;
+}
+
+.hacker-img{
+    max-width: 35%;
+    height: auto;
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 20px;
+}
+
+.story-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.story-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.btn-primary {
+    background-color: blueviolet;
+    border: none;
+    color: #0d0d0d;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: rgb(114, 24, 199);
+}
+
+.custom-input {
+    background-color: rgb(190, 171, 197);
+    border: 1px solid blueviolet;
+    color: rgb(90, 6, 168);
+    padding: 0.5rem;
+    font-family: 'Courier New', monospace;
+}
+
+
+.custom-input::placeholder {
+    color: rgb(54, 50, 50);
+    opacity: 0.7;
+}
+
+.custom-input:focus {
+    background-color: rgb(158, 142, 163);
+    border-color: rgb(130, 26, 228);
+    box-shadow: 0 0 5px blueviolet;
+    color: rgb(90, 6, 168);
+}
+
+.form-group {
+    margin-bottom: 0.4rem;
+}
+
+.form-label {
+    color: blueviolet;
+    margin-bottom: 0.1rem;
+}
+
+.btn-outline-danger {
+    border-color: #dc3545;
+    color: #dc3545;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.hacker-input[type="file"] {
+    padding: 0.5rem;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    background-color: #0d0d0d;
+    font-family: 'Courier New', monospace;
+}
+
+.hacker-input[type="file"]::file-selector-button {
+    background-color: blueviolet;
+    border: none;
+    color: #0d0d0d;
+    padding: 0.5rem 1rem;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.hacker-input[type="file"]::file-selector-button:hover {
+    background-color: rgb(103, 19, 182);
+}
+
+.post-form-block{
+    
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
