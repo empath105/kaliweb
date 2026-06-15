@@ -1,3 +1,14 @@
+<?php
+$link = mysqli_connect('127.0.0.1', 'root', 'eve@123', 'first1');
+$id = $_GET['id'];
+$sql = "SELECT * FROM posts WHERE id=$id";
+$result = mysqli_query($link, $sql);
+
+$row = mysqli_fetch_array($result);
+$title = $row['title'];
+$content = $row['content'];
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,13 +23,13 @@
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="row">    
             <div class="col-12 text-center">
-                <h1 class="mb-4">login</h1>
-                <form action="/login.html" method="POST" class="d-flex flex-column gap-3">
-                    <input type="text" name="login" class="form-control custom-input" placeholder="login">
-                    <input type="password" name="password" class="form-control custom-input" placeholder="password">
-                    <button class="btn btn-primary" type="submit" name="submit">Login</button>
-                    <p class="mt-3">Don't have an account? <a href="/registration.html">Register</a></p>
-                </form>
+                <div class="post-form-block">
+                    <?php 
+                        echo"<h1> $title </h1>"; 
+                        echo"<p> $content </p>"; 
+                    ?>
+                    <a href="/index.php" class="btn btn-primary">Back to main</a>
+                </div>
             </div>
         </div>
     </div>
